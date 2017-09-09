@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by hoa_nguyen on 2017-09-08.
  */
@@ -7,7 +9,10 @@ public class CastleCompany {
     }
 
     public static void main(String[] agrs) {
-        int[] land = {2,1,1,10};
+        // Get input from keyboard
+        String ins = getInput();
+        int[] land = converStringToInts(ins);
+
         int numCastle = 1; // can always build the castle at the first element
         Direction lastDir = Direction.DEFAULT;
 
@@ -26,5 +31,25 @@ public class CastleCompany {
         }
 
         System.out.print("Number of Castles: " + numCastle);
+    }
+
+    private static int[] converStringToInts(String args) {
+        args = args.replace(" ", ""); // replace all spaces
+
+        String[] ins = args.split(",");
+
+        int[] outs = new int[ins.length];
+        for(int i = 0; i < outs.length; i++) {
+            outs[i] = Integer.valueOf(ins[i]);
+        }
+
+        return outs;
+    }
+
+    private static String getInput() {
+        String input;
+        Scanner sc = new Scanner(System.in);
+        input = sc.nextLine();
+        return input;
     }
 }
