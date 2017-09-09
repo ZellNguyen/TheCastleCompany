@@ -5,7 +5,9 @@ Assignment 1: Aequilibrium - The Castle Company
 The Castle Builder program reads the input from keyboard. The input must be a sequence of integers separated by a comma ",". Press ENTER to read the input and see the result.
 
 For example: 
+
 Input: 1, 2, 2, 2, 2, 1 (ENTER)
+
 Number of Castles: 2
 
 ## Asumption
