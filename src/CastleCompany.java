@@ -47,6 +47,7 @@ public class CastleCompany {
     }
 
     private static String getInput() {
+        System.out.print("Input: ");
         String input;
         Scanner sc = new Scanner(System.in);
         input = sc.nextLine();
