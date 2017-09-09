@@ -12,3 +12,4 @@ Number of Castles: 2
 
 ## Asumption
 * We can't build a castle at the end of the array. 
+* The input is valid
